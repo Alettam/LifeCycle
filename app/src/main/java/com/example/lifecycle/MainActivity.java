@@ -104,8 +104,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
-        super.onSaveInstanceState(outState, outPersistentState);
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
         Log.d(TAG,"onSaveInstanceState");
         textView.append("\n" + "onSaveInstanceState");
         outState.putString("TEXT",textView.getText().toString());
